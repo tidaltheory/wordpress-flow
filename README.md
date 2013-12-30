@@ -16,6 +16,8 @@ git some git@github.com:Automattic/vip-quickstart.git
 ./bin/vip-init
 ```
 
+Running into problems at this point; could be due to Vagrant/VirtualBox/Mavericks incompatibilities.
+
 
 ## Install base theme/framework
 
