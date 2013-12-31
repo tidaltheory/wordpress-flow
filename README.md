@@ -15,9 +15,11 @@ git some git@github.com:Automattic/vip-quickstart.git
 
 ./bin/vip-init
 ```
-`Updating Shared VIP plugins` checks for WordPress.com username at https://vip-svn.wordpress.com:443 - init script continues after three tries; might be needed though.
 
-> Running into problems at this point; could be due to Vagrant/VirtualBox/Mavericks incompatibilities.
+**Running into problems at this point; could be due to Vagrant/VirtualBox/Mavericks incompatibilities.**
+
+> * `Updating Shared VIP plugins`  Checks for WordPress.com username at https://vip-svn.wordpress.com:443 - init script continues after three tries; might be needed though.
+> * `Configuring the hosts file`  Prompts for password and will not accept. Need to edit /etc/hosts manually `10.86.73.80 vip.dev`
 
 
 ## Install base theme/framework
