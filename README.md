@@ -4,6 +4,8 @@
 * Install `brew-cask`
 * Install [`yeoman`](http://yeoman.io/)
 
+> Note: keep an eye on [Bedrock](http://roots.io/wordpress-stack/) as a stack setup.
+
 
 ## Build local environment
 
