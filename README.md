@@ -37,11 +37,12 @@ vagrant up
 
 ## Install base theme/framework
 
-Use [_s](https://github.com/automattic/_s) to start until custom baseline can be developed.
-
 ```bash
 cd www/wordpress-default/wp-content/themes
 ```
+
+Use [_s](https://github.com/automattic/_s) to start until custom baseline can be developed.
+
 _Try using [Yeoman _s generator](https://github.com/kdo/generator-wp-underscores)_
 ```bash
 npm install -g generator-wp-underscores
@@ -51,6 +52,8 @@ yo wp-underscores
 
 grunt
 ```
+
+> Alternatively, develop theme in a separate location/repository and include in `/wp-content/themes` as a submodule.
 
 
 ## Develop custom theme/site
