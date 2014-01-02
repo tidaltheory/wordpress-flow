@@ -2,6 +2,7 @@
 
 * Install `homebrew`
 * Install `brew-cask`
+* Install [`yeoman`](http://yeoman.io/)
 
 
 ## Build local environment
@@ -21,11 +22,33 @@ git some git@github.com:Automattic/vip-quickstart.git
 > * `Updating Shared VIP plugins`  Checks for WordPress.com username at https://vip-svn.wordpress.com:443 - init script continues after three tries; might be needed though.
 > * `Configuring the hosts file`  Prompts for password and will not accept. Need to edit /etc/hosts manually `10.86.73.80 vip.dev`
 
+Let's try [VVV](https://github.com/10up/varying-vagrant-vagrants) by 10up instead:
+
+```bash
+vagrant plugin install vagrant-hostsupdater
+
+git some git://github.com/10up/varying-vagrant-vagrants.git vagrant-local
+
+cd vagrant-local
+
+vagrant up
+```
+
 
 ## Install base theme/framework
 
+Use [_s](https://github.com/automattic/_s) to start until custom baseline can be developed.
+
 ```bash
-yo
+cd www/wordpress-default/wp-content/themes
+```
+_Try using [Yeoman _s generator](https://github.com/kdo/generator-wp-underscores)_
+```bash
+npm install -g generator-wp-underscores
+
+mkdir theme-name && cd $_
+yo wp-underscores
+
 grunt
 ```
 
