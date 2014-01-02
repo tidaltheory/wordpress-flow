@@ -4,7 +4,7 @@
 * Install `brew-cask`
 * Install [`yeoman`](http://yeoman.io/)
 
-> Note: keep an eye on [Bedrock](http://roots.io/wordpress-stack/) as a stack setup.
+> **Note:** keep an eye on [Bedrock](http://roots.io/wordpress-stack/) as a stack setup.
 
 
 ## Build local environment
@@ -37,7 +37,7 @@ vagrant up
 ```
 
 
-## Install base theme/framework
+## Install starter theme/framework
 
 ```bash
 cd www/wordpress-default/wp-content/themes
@@ -55,11 +55,14 @@ yo wp-underscores
 grunt
 ```
 
-> Alternatively, develop theme in a separate location/repository and include in `/wp-content/themes` as a submodule.
+> **Note:** [Roots](http://roots.io/starter-theme/) and [Bones](http://themble.com/bones/) are worth a look too.
+
 
 
 ## Develop custom theme/site
-Following FED standards, of course.
+
+Following [FED standards](https://github.com/tidaltheory/frontend-code-standards/wiki), of course. Either develop theme in `/wp-content/themes` directly, or in a separate location/repository and include in `/wp-content/themes` as a submodule.
+
 ```bash
 grunt
 bower
