@@ -36,6 +36,8 @@ cd vagrant-local
 vagrant up
 ```
 
+> **Note:** look into how to have more than one VM set up this way.
+
 
 ## Install starter theme/framework
 
