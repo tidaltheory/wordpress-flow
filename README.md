@@ -48,6 +48,7 @@ cd www/wordpress-default/wp-content/themes
 Use [_s](https://github.com/automattic/_s) to start until custom baseline can be developed.
 
 _Try using [Yeoman _s generator](https://github.com/kdo/generator-wp-underscores)_
+
 ```bash
 npm install -g generator-wp-underscores
 
@@ -69,6 +70,8 @@ Following [FED standards](https://github.com/tidaltheory/frontend-code-standards
 grunt
 bower
 ```
+
+> **Hardcore mode:** [Genesis Framework](http://www.genesisframework.com/) + [Dynamik Website Builder](http://cobaltapps.com/downloads/dynamik-website-builder/) + [Toolset](http://wp-types.com/)
 
 
 ## Package finished theme for deployment
