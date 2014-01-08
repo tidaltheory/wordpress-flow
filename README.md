@@ -36,7 +36,7 @@ cd vagrant-local
 vagrant up
 ```
 
-> **Note:** look into how to have more than one VM set up this way.
+> **Note:** look into how to have more than one VM set up this way. Possibly [vvv-init](https://github.com/cftp/vvv-init/)?
 
 
 ## Install starter theme/framework
