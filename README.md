@@ -60,6 +60,8 @@ grunt
 
 > **Note:** [Roots](http://roots.io/starter-theme/) and [Bones](http://themble.com/bones/) are worth a look too.
 
+Hacked a few bits out of the Roots starter theme with success. Modularity of template files, some sensible functions, and a clean directory structure. Just wish it didn't come with Bootstrap baked-in.
+
 
 
 ## Develop custom theme/site
@@ -86,6 +88,8 @@ grunt
 ```bash
 git-ftp? capistrano? grunt? 
 ```
+
+Tried `grunt-ftp-deploy` which worked well enough (as long as you were careful with the ignore settings) although not really suited for use whilst developing, as it doesn't track file changes and uploads the entire project each time. `grunt-git-ftp` could be an option, or possibly [Dandelion](http://scttnlsn.github.io/dandelion/), both of which use git to track changes.
 
 
 ## Deploy to Production environment
