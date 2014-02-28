@@ -19,10 +19,9 @@ git some git@github.com:Automattic/vip-quickstart.git
 ./bin/vip-init
 ```
 
-**Running into problems at this point; could be due to Vagrant/VirtualBox/Mavericks incompatibilities.**
+**Requires access to WordPress SVN to sync developer plugins**
 
-> * `Updating Shared VIP plugins`  Checks for WordPress.com username at https://vip-svn.wordpress.com:443 - init script continues after three tries; might be needed though.
-> * `Configuring the hosts file`  Prompts for password and will not accept. Need to edit /etc/hosts manually `10.86.73.80 vip.dev`
+> * `Updating Shared VIP plugins`  Checks for WordPress.com username at https://vip-svn.wordpress.com:443
 
 Let's try [VVV](https://github.com/10up/varying-vagrant-vagrants) by 10up instead:
 
@@ -76,13 +75,6 @@ bower
 > **Hardcore mode:** [Genesis Framework](http://www.genesisframework.com/) + [Dynamik Website Builder](http://cobaltapps.com/downloads/dynamik-website-builder/) + [Toolset](http://wp-types.com/)
 
 
-## Package finished theme for deployment
-
-```bash
-grunt
-```
-
-
 ## Deploy to Staging environment and test/demo
 
 ```bash
@@ -90,6 +82,13 @@ git-ftp? capistrano? grunt?
 ```
 
 Tried `grunt-ftp-deploy` which worked well enough (as long as you were careful with the ignore settings) although not really suited for use whilst developing, as it doesn't track file changes and uploads the entire project each time. `grunt-git-ftp` could be an option, or possibly [Dandelion](http://scttnlsn.github.io/dandelion/), both of which use git to track changes.
+
+
+## Package finished theme for deployment
+
+```bash
+grunt
+```
 
 
 ## Deploy to Production environment
